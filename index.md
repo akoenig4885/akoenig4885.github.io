@@ -15,17 +15,28 @@ The artifacts below showcase my talents as a software developer. They consist of
 
 
 ### Quick Links
-|Artifact      | Original | Enhancement |
+|Category     | Original | Enhancement |
 |--------------|----------|------------ |
-|Artifact One  |[CS 300 Project Two](https://github.com/akoenig4885/CS300)|[Enhancement One](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/Enhancement%20One/CS499_Artifact_One)|
-|Artifact Two  | [IT 145 Project](https://github.com/akoenig4885/IT145)|[Enhancement Two](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/CS%20499%20Artifact%20Two/Enchancement_Two)|
-|Artifact Three| [CS 340 Project](https://github.com/akoenig4885/CS340)| Enhancement Three |
+|Software Design and Engineering  |[CS 300 Project Two](https://github.com/akoenig4885/CS300)|[Enhancement One](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/Enhancement%20One/CS499_Artifact_One)|
+|Data Structures and Algorithms  | [IT 145 Project](https://github.com/akoenig4885/IT145)|[Enhancement Two](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/CS%20499%20Artifact%20Two/Enchancement_Two)|
+|Databases| [CS 340 Project](https://github.com/akoenig4885/CS340)| Enhancement Three |
 
 ## Artifact One - Software Design and Engineering
 
 **[Original Artifact - CS 300 Project Two](https://github.com/akoenig4885/CS300)**
 
 **[Enhancement One](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/Enhancement%20One/CS499_Artifact_One)**
+
+The artifact that I selected for this assignment was the final project for CS 300: Data Structures and Algorithms. It was created in August of 2023. The program opens and reads data from a formatted csv file. This file contains course numbers, names, and prerequisite course numbers. Each line of the file becomes a node of a binary tree, with the key of the node being the course number. The binary tree has functions for inserting nodes, removing nodes, searching the tree, and printing the tree in order. The user is presented with a menu, with the option to load data from a file, print the tree, search for a course, or exit the program.
+
+I selected this artifact because I felt it both shows my skills as a programmer and has room for improvement. The binary tree is a complicated data structure. This artifact also has  sections where I thought ahead and added more than was required. For example, after loading the courses into the tree I check the prerequisites to ensure that their course numbers exist in the tree. This ensures that all the prerequisite courses actually exist. I added a function to remove courses from the binary tree, although this is not used by the actual program. I also had rudimentary input validation for the menu selection that checked for the value of user input, but did not verify that the user entered an integer. There were still areas to improve. 
+
+For this enhancement, the main change was porting the code from C++ to Java. I also changed the structure of the code, splitting the classes into their own files. In the C++ code, the course object was a struct. In Java, I made it a class and added the methods to print the course and convert csv file lines to the class. In addition, the method for loading courses into the tree was moved into the binary tree class. This shows the object-oriented programming principles of encapsulation. The option to remove nodes from the tree was added to the menu. The input validation was enhanced to ensure that users could only enter a number for the menu selection. Unit tests were added for the course and binary tree classes. Rather than use a hardcoded value for the input file, the filename now takes user input, and if a file not found exception is thrown it is caught and handled. Additionally, I have added Javadoc notation to all methods containing a brief description and explaining their parameters and return types.
+
+The course outcome that I had planned to meet with this enhancement was related to security. I do believe that the improvements I made to input validation, file reading, and the unit tests show progress toward a security mindset that mitigates design flaws and exploits. However, I had initially planned to add user profiles, authentication, and authorization to this artifact. After working with it, I realized authentication and authorization does not make much sense for this program that is practically read only. 
+
+While enhancing the artifact, I did run into a few challenges. When initially attempting to load data into the binary tree, every node would contain the information of the last loaded course. I thought that there was an issue with my insert function somehow overwriting the root of the tree with each new insert. In reality, my load courses function assigned a course to the root, then overwrote that course with each new line. This was fixed by moving the declaration of the course into the loop so a new course was declared for every line. Another challenge I faced was issues with the user input for the menu. I had declared three separate scanners that utilized System.in, one for each class that took user input. These scanners conflicted with each other, leading to unexpected behavior. In order to fix this problem, I declared a single instance of scanner in the main class that the other classes called when they needed input. 
+
 
 ## Artifact Two - Datastructures and Algorithms
 **[Original Artifact - IT 145 Project](https://github.com/akoenig4885/IT145)**
