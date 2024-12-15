@@ -19,7 +19,7 @@ The artifacts below showcase my talents as a software developer. They consist of
 |--------------|----------|------------ |
 |Software Design and Engineering  |[CS 300 Project Two](https://github.com/akoenig4885/CS300)|[Enhancement One](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/Enhancement%20One/CS499_Artifact_One)|
 |Data Structures and Algorithms  | [IT 145 Project](https://github.com/akoenig4885/IT145)|[Enhancement Two](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/CS%20499%20Artifact%20Two/Enchancement_Two)|
-|Databases| [CS 340 Project](https://github.com/akoenig4885/CS340)| Enhancement Three |
+|Databases| [CS 340 Project](https://github.com/akoenig4885/CS340)| [Enhancement Three](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/Enhancement%203) |
 
 ## Artifact One - Software Design and Engineering
 
@@ -59,4 +59,10 @@ While adding these enhancements to the artifact, the only challenge I ran into w
 ## Artifact Three - Databases
 
 **[Original Artifact - CS 340 Project](https://github.com/akoenig4885/CS340)**
+
+**[Enhancement Three](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/Enhancement%203)**
+
+**[API Server For Enhancement Three](https://github.com/akoenig4885/akoenig4885.github.io/tree/main/API%20Server/demo/demo)**
+
+
 
