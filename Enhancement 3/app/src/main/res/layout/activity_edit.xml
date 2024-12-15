@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_rec_number"
+        android:text = "Record Number:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="32dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_id"
+        android:text = "Animal ID:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_rec_number"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_rec_number"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_age"
+        android:text = "Animal Age:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_id"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_id"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_breed"
+        android:text = "Breed:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_type"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_type"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_color"
+        android:text = "Fur Color:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_breed"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_breed"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_birth"
+        android:text = "Date of Birth:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_color"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_color"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_discharge_time"
+        android:text = "Discharge Time:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_birth"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_birth"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_name"
+        android:text = "Name:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_discharge_time"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_discharge_time"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_outcome"
+        android:text = "Outcome:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_name"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_name"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_sex"
+        android:text = "Sex Upon Outcome:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_outcome"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_outcome"
+        android:layout_marginTop = "16dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_animal_type"
+        android:text = "Animal Type:"
+        android:textSize = "16sp"
+        app:layout_constraintTop_toBottomOf= "@id/edit_animal_age"
+        app:layout_constraintStart_toStartOf="@id/edit_animal_age"
+        android:layout_marginTop = "16dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_rec_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_rec_number"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_id_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_id"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_sex_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_sex"
+        app:layout_constraintLeft_toRightOf="@id/edit_animal_sex"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="8dp"
+        />
+    <EditText
+        android:id="@+id/edit_age_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_age"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_type_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_type"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_breed_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_breed"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_color_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_color"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_birth_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_birth"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_discharge_time_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_discharge_time"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_name_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_name"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <EditText
+        android:id="@+id/edit_outcome_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:maxLines="1"
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_animal_outcome"
+        app:layout_constraintLeft_toLeftOf="@id/edit_sex_edit_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        />
+    <Button
+        android:id="@+id/edit_animal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Edit Animal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="editAnimal"
+        />
+    <Button
+        android:id="@+id/delete_animal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Delete Animal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/edit_animal_button"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="deleteAnimal"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
