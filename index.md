@@ -12,6 +12,7 @@ Secure coding was another important skill that I gained from SNHU. I learned how
 The artifacts below showcase my talents as a software developer. They consist of three original projects created during my time at SNHU, and three enhancements made to these projects. The first artifact demonstrates my software design and engineering skills. The second exhibits my knowledge of data structures and algorithms. The final artifact is related to databases. All three enhancements are written in Java.
 
 
+[Code Review](https://www.youtube.com/watch?v=4i9mASuJE8Q)
 
 
 ### Quick Links
